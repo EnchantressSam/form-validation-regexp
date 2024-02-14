@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+base {
+  color: #e64454;
+  color: #c2cad0;
+  color: #c2b9b0;
+  color: #7e685a;
+  color: #afd275;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  color: #7e685a;
+  font-size: 18px;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: #c2b9b0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container form{
+  width: 90%;
+  min-width: 500px;
+  padding: 50px 30px 20px;
+  background-color: #c2cad0;
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.fa-envelope-open-text{
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 26px;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.input-group{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  position: relative;
+}
+.input-group label{
+  flex-basis: 32%;
+}
+.input-group input, .input-group textarea{
+  flex-basis: 65%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #c2b9b0;
+  color: #7e685a;
+  font-size: 16px;
+}
+::placeholder{
+  color: #7e685a;
+  font-family: "Playfair Display", serif;
+  opacity: 0.6;
+  font-size: 14px;
+}
+form button{
+  background-color: #7e685a;
+  color: #c2cad0;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 10px 40px;
+  outline: 0;
+  cursor: pointer;
+  margin: 30px auto -10px;
+  display: block;
+}
+.input-group span{
+  position: absolute;
+  bottom: 12px;
+  right: 17px;
+  font-size: 15px;
+  color: #e64454;
+  font-weight: 500;
+}
+.input-group span i{
+  color: #4a6b14;
+  font-size: 18px;
+
+}
+#submit-error{
+  font-size: 15px;
+  color: #e64454;
+  font-weight: 500;
+  
+}
